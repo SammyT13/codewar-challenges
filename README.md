@@ -1,1 +1,1 @@
-# codeware_challenges
+# codewar_challenges
