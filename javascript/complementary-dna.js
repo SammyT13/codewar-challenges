@@ -23,12 +23,37 @@
     // regex /A|T|G|C/g
     // use a function as a replacer method (newvalue)
 
+// Submitted
 
 const dnaStrand = dna => {
    let rnaObj = {A: 'T', T: 'A', G: 'C', C: 'G'}
 
    return dna.replace(/A|T|G|C/g, rna => rnaObj[rna])
 }
+
+// Method below uses switch
+
+// const dnaStrand = dna => {
+//  
+//     var rna = "";
+//     for(var i=0; i<dna.length; i++) {
+//       switch(dna[i]) {
+//         case 'A':
+//           res += "T";
+//           break;
+//         case 'T':
+//           res += "A";
+//           break;
+//         case 'G':
+//           res += "C";
+//           break;
+//         case 'C':
+//           res += "G";
+//           break;
+//       }
+//     }
+//     return rna
+//   }
 
 console.log(dnaStrand("AAAA"))
 console.log(dnaStrand("ATTGC"))
