@@ -26,7 +26,7 @@ const findUniq = array => {
         frequency.set(i, count)
     })
 
-    // iterates over map
+    // iterates over frequency
     for (let [k, v] of frequency) {
         // finds the frequency of 1
         if (v === 1) {
